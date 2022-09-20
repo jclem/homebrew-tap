@@ -5,21 +5,21 @@
 class Konk < Formula
   desc ""
   homepage "https://github.com/jclem/konk"
-  version "0.22.0"
+  version "0.24.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jclem/konk/releases/download/v0.22.0/konk_0.22.0_macOS_arm64.tar.gz"
-      sha256 "abc220af605f13cc9e957b277ea491d3cda8d8fd510947e5f0582b310ce711aa"
+      url "https://github.com/jclem/konk/releases/download/v0.24.0/konk_0.24.0_macOS_arm64.tar.gz"
+      sha256 "6d88940aefc0b4d06d25fae266fc6389f4e0d89d9d2737a678ebe3e501e448c6"
 
       def install
         bin.install "konk"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jclem/konk/releases/download/v0.22.0/konk_0.22.0_macOS_64-bit.tar.gz"
-      sha256 "04c7632f2f6850e8d642f17ecc809d785e1578994d8c387d2d08056d7b1a27f0"
+      url "https://github.com/jclem/konk/releases/download/v0.24.0/konk_0.24.0_macOS_64-bit.tar.gz"
+      sha256 "6346086c17bf63861e4618a183d9e7b169a6a1dac58ab5f95347417a3a74e1b4"
 
       def install
         bin.install "konk"
@@ -29,16 +29,16 @@ class Konk < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jclem/konk/releases/download/v0.22.0/konk_0.22.0_Linux_arm64.tar.gz"
-      sha256 "1ec27beadee8e3dc6fd81a245d0b9769477b8fd8c684d8c9eaec7f42b320c397"
+      url "https://github.com/jclem/konk/releases/download/v0.24.0/konk_0.24.0_Linux_arm64.tar.gz"
+      sha256 "11d3f15845f5d1e8b06e4d2fd8bac823ca5716df1ecd4e2afec3a227c0288862"
 
       def install
         bin.install "konk"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jclem/konk/releases/download/v0.22.0/konk_0.22.0_Linux_64-bit.tar.gz"
-      sha256 "a1536ea6e2ba554d0d38521b702d21ab4f0a4b01f475533ba9c9015873cd987b"
+      url "https://github.com/jclem/konk/releases/download/v0.24.0/konk_0.24.0_Linux_64-bit.tar.gz"
+      sha256 "4680697658b58a30684f900af23cc3c5cf3a70361a355a7fba03989990c5cfb6"
 
       def install
         bin.install "konk"
