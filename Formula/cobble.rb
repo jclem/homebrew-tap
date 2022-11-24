@@ -5,21 +5,21 @@
 class Cobble < Formula
   desc ""
   homepage "https://github.com/jclem/cobble"
-  version "0.0.8"
+  version "0.0.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jclem/cobble/releases/download/v0.0.8/cobble_0.0.8_macOS_arm64.tar.gz"
-      sha256 "c034dde468225f584665d81ea17def33816bb9ea00b0d75d92f4d1bda252c9c5"
+      url "https://github.com/jclem/cobble/releases/download/v0.0.9/cobble_0.0.9_macOS_arm64.tar.gz"
+      sha256 "80c67a264aac0398f01bba7ce4552e40a44c8f1dce76580f7292856f728ca535"
 
       def install
         bin.install "cobble"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jclem/cobble/releases/download/v0.0.8/cobble_0.0.8_macOS_64-bit.tar.gz"
-      sha256 "417156bd560a321775221fd22227626f6c7b1abee25275e2d59092fee7a0724e"
+      url "https://github.com/jclem/cobble/releases/download/v0.0.9/cobble_0.0.9_macOS_64-bit.tar.gz"
+      sha256 "b290784b481b4ebf72ab01d1f8e7da7c03e0519b46a0ad1128aae550ff407888"
 
       def install
         bin.install "cobble"
@@ -29,16 +29,16 @@ class Cobble < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jclem/cobble/releases/download/v0.0.8/cobble_0.0.8_Linux_arm64.tar.gz"
-      sha256 "271a1e7d34e3a1cfaac96d9b4ebbf150f5d88082686883f49ef343b970cf4516"
+      url "https://github.com/jclem/cobble/releases/download/v0.0.9/cobble_0.0.9_Linux_arm64.tar.gz"
+      sha256 "ac1203bd5b51ec9def39d6bf57d6dbcf2d0b5b2d486a864ceba6b484f9f9c314"
 
       def install
         bin.install "cobble"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jclem/cobble/releases/download/v0.0.8/cobble_0.0.8_Linux_64-bit.tar.gz"
-      sha256 "577fe25e90687ba50c8279b49fb83871d6a5b214f7f1842bbafef97feb962d63"
+      url "https://github.com/jclem/cobble/releases/download/v0.0.9/cobble_0.0.9_Linux_64-bit.tar.gz"
+      sha256 "6f8c3c0b2f256f9d3022278ba0e60661370d8229140cf86d4fe301ac2bc46555"
 
       def install
         bin.install "cobble"
