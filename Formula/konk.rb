@@ -5,21 +5,21 @@
 class Konk < Formula
   desc ""
   homepage "https://github.com/jclem/konk"
-  version "0.28.1"
+  version "0.28.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jclem/konk/releases/download/v0.28.1/konk_0.28.1_macOSarm64.tar.gz"
-      sha256 "7140e4bf93018a2e90d2d1bce7ada6b81f0134c98758eb09d0982bc9e47d1af8"
+      url "https://github.com/jclem/konk/releases/download/v0.28.2/konk_0.28.2_macOSarm64.tar.gz"
+      sha256 "33af33f36b2f842e949aeb7f3ea0e0729305a3cb919acf12e921f2d1b92cef89"
 
       def install
         bin.install "konk"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jclem/konk/releases/download/v0.28.1/konk_0.28.1_macOS64-bit.tar.gz"
-      sha256 "9d7e8d47f8bab92ab7193fa49f9f7a72660bef4927217bf57b95c1562fc8f6cc"
+      url "https://github.com/jclem/konk/releases/download/v0.28.2/konk_0.28.2_macOS64-bit.tar.gz"
+      sha256 "749688fe8eab9e72dd91de77cc5b16e54daa36b50682552a48e61d706666048f"
 
       def install
         bin.install "konk"
@@ -29,16 +29,16 @@ class Konk < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jclem/konk/releases/download/v0.28.1/konk_0.28.1_Linuxarm64.tar.gz"
-      sha256 "ab7c93b3c951d734c86030d5346803ade0bebf3a5479df5415fd54f2dbbcdab2"
+      url "https://github.com/jclem/konk/releases/download/v0.28.2/konk_0.28.2_Linuxarm64.tar.gz"
+      sha256 "76bb6583c14ae4824ed7c455b2cd4ac5199138365e779cfa5db9c6e7fe803e29"
 
       def install
         bin.install "konk"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jclem/konk/releases/download/v0.28.1/konk_0.28.1_Linux64-bit.tar.gz"
-      sha256 "c9f09f3f2e2fd536f6a3d18a5e622754f02496d0d24c5ebae0483e24b0a32f5b"
+      url "https://github.com/jclem/konk/releases/download/v0.28.2/konk_0.28.2_Linux64-bit.tar.gz"
+      sha256 "f4ae87d8daa57b6c50850d766f42b07941c599cc5fd8789d610299b0327d7880"
 
       def install
         bin.install "konk"
