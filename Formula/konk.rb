@@ -5,21 +5,21 @@
 class Konk < Formula
   desc ""
   homepage "https://github.com/jclem/konk"
-  version "0.28.2"
+  version "0.29.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jclem/konk/releases/download/v0.28.2/konk_0.28.2_macOSarm64.tar.gz"
-      sha256 "33af33f36b2f842e949aeb7f3ea0e0729305a3cb919acf12e921f2d1b92cef89"
+      url "https://github.com/jclem/konk/releases/download/v0.29.2/konk_0.29.2_darwin_arm64.tar.gz"
+      sha256 "a04d9a21a5121adea904238e7729e6cc5179352cda2311fcebf2ff4088a828cd"
 
       def install
         bin.install "konk"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jclem/konk/releases/download/v0.28.2/konk_0.28.2_macOS64-bit.tar.gz"
-      sha256 "749688fe8eab9e72dd91de77cc5b16e54daa36b50682552a48e61d706666048f"
+      url "https://github.com/jclem/konk/releases/download/v0.29.2/konk_0.29.2_darwin_amd64.tar.gz"
+      sha256 "f17caaa7bb45ed9ef3e6096ea642d1300024071af7436194dae61e39c3974658"
 
       def install
         bin.install "konk"
@@ -29,16 +29,16 @@ class Konk < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jclem/konk/releases/download/v0.28.2/konk_0.28.2_Linuxarm64.tar.gz"
-      sha256 "76bb6583c14ae4824ed7c455b2cd4ac5199138365e779cfa5db9c6e7fe803e29"
+      url "https://github.com/jclem/konk/releases/download/v0.29.2/konk_0.29.2_linux_arm64.tar.gz"
+      sha256 "b768573170cb52b9c4dfeb0790b180bc3ecbb9e17b45f5eceee816ed7c30343b"
 
       def install
         bin.install "konk"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jclem/konk/releases/download/v0.28.2/konk_0.28.2_Linux64-bit.tar.gz"
-      sha256 "f4ae87d8daa57b6c50850d766f42b07941c599cc5fd8789d610299b0327d7880"
+      url "https://github.com/jclem/konk/releases/download/v0.29.2/konk_0.29.2_linux_amd64.tar.gz"
+      sha256 "8cb4a0f97c46d637fd8908f7f0ff5628daa2e908fb8c530303210c2c7bc52ff9"
 
       def install
         bin.install "konk"
