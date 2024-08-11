@@ -5,21 +5,21 @@
 class Konk < Formula
   desc ""
   homepage "https://github.com/jclem/konk"
-  version "0.29.2"
+  version "0.29.7"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/jclem/konk/releases/download/v0.29.2/konk_0.29.2_darwin_arm64.tar.gz"
-      sha256 "a04d9a21a5121adea904238e7729e6cc5179352cda2311fcebf2ff4088a828cd"
+    on_intel do
+      url "https://github.com/jclem/konk/releases/download/v0.29.7/konk_0.29.7_darwin_amd64.tar.gz"
+      sha256 "a01cffb51a6b5fab5b2c3598770d0d26bc127ebcccff18e5b4d90460f893a954"
 
       def install
         bin.install "konk"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/jclem/konk/releases/download/v0.29.2/konk_0.29.2_darwin_amd64.tar.gz"
-      sha256 "f17caaa7bb45ed9ef3e6096ea642d1300024071af7436194dae61e39c3974658"
+    on_arm do
+      url "https://github.com/jclem/konk/releases/download/v0.29.7/konk_0.29.7_darwin_arm64.tar.gz"
+      sha256 "1b047113f649c22be78f9cb368ec1710ae6c5e845109e73b97ed72924c5e72d0"
 
       def install
         bin.install "konk"
@@ -28,20 +28,24 @@ class Konk < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jclem/konk/releases/download/v0.29.2/konk_0.29.2_linux_arm64.tar.gz"
-      sha256 "b768573170cb52b9c4dfeb0790b180bc3ecbb9e17b45f5eceee816ed7c30343b"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/jclem/konk/releases/download/v0.29.7/konk_0.29.7_linux_amd64.tar.gz"
+        sha256 "1ae938ec73c6de9cf57dbdbe3aef2bab11f9ab80b01d202d77f1ce0caaf6f4ca"
 
-      def install
-        bin.install "konk"
+        def install
+          bin.install "konk"
+        end
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/jclem/konk/releases/download/v0.29.2/konk_0.29.2_linux_amd64.tar.gz"
-      sha256 "8cb4a0f97c46d637fd8908f7f0ff5628daa2e908fb8c530303210c2c7bc52ff9"
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/jclem/konk/releases/download/v0.29.7/konk_0.29.7_linux_arm64.tar.gz"
+        sha256 "aaf9f21710f7aed96c84b8a6721e058d93453bf1c7e840d284a47cedaa27bf80"
 
-      def install
-        bin.install "konk"
+        def install
+          bin.install "konk"
+        end
       end
     end
   end
