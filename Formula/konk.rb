@@ -5,21 +5,21 @@
 class Konk < Formula
   desc ""
   homepage "https://github.com/jclem/konk"
-  version "0.29.7"
+  version "0.29.9"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/jclem/konk/releases/download/v0.29.7/konk_0.29.7_darwin_amd64.tar.gz"
-      sha256 "a01cffb51a6b5fab5b2c3598770d0d26bc127ebcccff18e5b4d90460f893a954"
+      url "https://github.com/jclem/konk/releases/download/v0.29.9/konk_0.29.9_darwin_amd64.tar.gz"
+      sha256 "e44b78faedf6f24974a802eef29b7769803d652dc4a8c60892be502ceb13782f"
 
       def install
         bin.install "konk"
       end
     end
     on_arm do
-      url "https://github.com/jclem/konk/releases/download/v0.29.7/konk_0.29.7_darwin_arm64.tar.gz"
-      sha256 "1b047113f649c22be78f9cb368ec1710ae6c5e845109e73b97ed72924c5e72d0"
+      url "https://github.com/jclem/konk/releases/download/v0.29.9/konk_0.29.9_darwin_arm64.tar.gz"
+      sha256 "93868b0e30175523fbec638f55227e2e0aa9f40912fedcad997fa4c1d440b7a1"
 
       def install
         bin.install "konk"
@@ -30,8 +30,8 @@ class Konk < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jclem/konk/releases/download/v0.29.7/konk_0.29.7_linux_amd64.tar.gz"
-        sha256 "1ae938ec73c6de9cf57dbdbe3aef2bab11f9ab80b01d202d77f1ce0caaf6f4ca"
+        url "https://github.com/jclem/konk/releases/download/v0.29.9/konk_0.29.9_linux_amd64.tar.gz"
+        sha256 "cce80e35723b242ab6599719324059e347d83b90e51b6acadc52ef7c3b384882"
 
         def install
           bin.install "konk"
@@ -40,8 +40,8 @@ class Konk < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jclem/konk/releases/download/v0.29.7/konk_0.29.7_linux_arm64.tar.gz"
-        sha256 "aaf9f21710f7aed96c84b8a6721e058d93453bf1c7e840d284a47cedaa27bf80"
+        url "https://github.com/jclem/konk/releases/download/v0.29.9/konk_0.29.9_linux_arm64.tar.gz"
+        sha256 "f8208147a42820c71764634c46340979fd61345c262af7b90666d376689d9a78"
 
         def install
           bin.install "konk"
