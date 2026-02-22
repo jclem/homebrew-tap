@@ -4,11 +4,9 @@ class Get < Formula
   version "0.6.0"
   license "MIT"
 
-  on_macos do
-    on_arm do
-      url "https://github.com/jclem/get/releases/download/v0.6.0/get-aarch64-apple-darwin.tar.xz"
-      sha256 "50fa028b987b22d38ee9db0604cc958cf9b9694b63346ea411f645770b450f83"
-    end
+  on_arm do
+    url "https://github.com/jclem/get/releases/download/v0.6.0/get-aarch64-apple-darwin.tar.xz"
+    sha256 "50fa028b987b22d38ee9db0604cc958cf9b9694b63346ea411f645770b450f83"
   end
 
   def install
