@@ -1,13 +1,13 @@
 class Work < Formula
   desc "A CLI for managing work"
   homepage "https://github.com/jclem/work"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/jclem/work/releases/download/v0.1.3/work-aarch64-apple-darwin.tar.xz"
-      sha256 "4d8addf4fb9cfe2eb5e7c8fd6c0d24840f469e1b1aa20679e049595de6c74eb7"
+      url "https://github.com/jclem/work/releases/download/v0.1.4/work-aarch64-apple-darwin.tar.xz"
+      sha256 "c4a801d1ff30cbd0cba2a69fc359d211e9f25a0b3b78adeccdb6894463353893"
     end
   end
 
