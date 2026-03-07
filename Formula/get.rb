@@ -1,28 +1,28 @@
 class Get < Formula
   desc "A convenient HTTP CLI with expressive inline request syntax"
   homepage "https://github.com/jclem/get"
-  version "0.9.0"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/jclem/get/releases/download/v0.9.0/get-aarch64-apple-darwin.tar.xz"
-      sha256 "9ef0ae3ebd65027fce9675a3cf5f516877542480ef6f33c22a121cefc05da0cc"
+      url "https://github.com/jclem/get/releases/download/v0.9.1/get-aarch64-apple-darwin.tar.xz"
+      sha256 "f35da00f5414be786043a266b0f8730655f56653147d8c1fbc6865ab8da83249"
     end
     on_intel do
-      url "https://github.com/jclem/get/releases/download/v0.9.0/get-x86_64-apple-darwin.tar.xz"
-      sha256 "557b7c3596e0b3ac93685e560042f33f5d2c464801299df006ff20af81b0becf"
+      url "https://github.com/jclem/get/releases/download/v0.9.1/get-x86_64-apple-darwin.tar.xz"
+      sha256 "14b2e4c50e50e87e259382ad72510f73648a897edfa19c07ef5d5ce373962994"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jclem/get/releases/download/v0.9.0/get-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "02179c1b7cd7ec2346f5b5b97e01cb72af4c2be0b5e43d7a69f6a6e3f10718e8"
+      url "https://github.com/jclem/get/releases/download/v0.9.1/get-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "f8ef711c487c23a122b21a675ac3632b6f87e6cb806ae27fb666a61b371a9089"
     end
     on_intel do
-      url "https://github.com/jclem/get/releases/download/v0.9.0/get-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "da2eeb2677c7ac578c32a986ef5ca8421590f3452172b862a363231bfba4509c"
+      url "https://github.com/jclem/get/releases/download/v0.9.1/get-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "a003ba46c864afab801ea445320d99d63443ab6542dd6abca1c9675f2c7ed7d4"
     end
   end
 
